@@ -37,3 +37,11 @@ allBtn.addEventListener('click', () => {
     desiFoodcart.classList.remove('hidden');
     fastFoodcart.classList.remove('hidden');
 });
+
+const likeBtn = document.querySelectorAll('.like');
+
+likeBtn.addEventListener('click', () => {
+    likeBtn.classList.remove('gradient-text');
+    likeBtn.classList.add('text-red-500');
+    likeBtn.classList.add('font-bold');
+});
