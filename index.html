@@ -136,17 +136,18 @@
             <h1 class="text-3xl">Food Menu!</h1>
         </div>
         <div class="md:text-end text-center my-5">
-            <button class="shadow-lg py-2 px-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300">Add Dish</button>
+            <button class="capitalize create_btn shadow-lg py-2 px-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300">
+              Creat new Dish cart</button>
         </div>
         <div class="flex items-center justify-center gap-x-2 capitalize mt-20">
-            <a href="#" class="text-sm gradient-text">All</a>
+            <a href="#" class="text-sm gradient-text ">All</a>
             <a href="#" class="text-sm gradient-text">Fast Food</a>
             <a href="#" class="text-sm gradient-text">Desi Food</a>
         </div>
-        <div class="grid md:grid-cols-4 grid-cols-1 gap-5 my-10">
+        <div class="cart_make grid md:grid-cols-4 grid-cols-1 gap-5 my-10">
             <div class="shadow-xl bg-white rounded-lg">
                 <div class="relative">
-                <img src="./images/deal 1.jpg" class="rounded-t-lg w-80">
+                <img src="./images/deal 1.jpg" class="rounded-t-lg w-full">
                 <div class="absolute top-1 right-2">
                     <i class="far fa-heart gradient-text text-2xl"></i>
                 </div>
@@ -155,13 +156,67 @@
                     <h1 class="gradient-text">deal 1</h1>
                     <h1 class="text-xs">Rs.600</h1>
                 </div>
-                <div class="text-xs">
-                    
+                <div class="p-3 text-xs capitalize ">
+                    <h1 class="text-gray-500 mb-2"><i class="far fa-play-circle gradient-text mr-1"></i> 1 chicken burger</h1>
+                    <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 1 French Fries</h1>
+                </div>
+                <div class="capitalize text-center p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer">
+                  <a href="#">
+                    <i class="fa fa-cart-shopping"></i>
+                  add to cart
+                  </a>
+                </div>
+            </div>
+            <div class="shadow-xl bg-white rounded-lg">
+                <div class="relative">
+                <img src="./images/deal 1.jpg" class="rounded-t-lg w-full">
+                <div class="absolute top-1 right-2">
+                    <i class="far fa-heart gradient-text text-2xl"></i>
+                </div>
+            </div>
+                <div class="p-3 capitalize flex items-center justify-between">
+                    <h1 class="gradient-text">deal 1</h1>
+                    <h1 class="text-xs">Rs.600</h1>
+                </div>
+                <div class="p-3 text-xs capitalize ">
+                    <h1 class="text-gray-500 mb-2"><i class="far fa-play-circle gradient-text mr-1"></i> 1 chicken burger</h1>
+                    <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 1 French Fries</h1>
+                </div>
+                <div class="capitalize text-center p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer">
+                  <a href="#">
+                    <i class="fa fa-cart-shopping"></i>
+                  add to cart
+                  </a>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="Add_cart_modal hidden h-screen w-full fixed left-0 top-0 flex items-center justify-center bg-black bg-opacity-50 p-64">
+      <div class="bg-white rounded-lg shadow-lg p-5">
+        <div class="close_btn flex items-center justify-between ">
+          <h1 class="gradient-text">Create New Dishes!</h1>
+          <i class="fa fa-times close_btn p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
+        </div>
+        <div class="w-full my-5">
+          <form action="" class="grid md:grid-cols-3 grid-cols-1 gap-8 w-full capitalize">
+          <input type="file" name="img" id="img" class="col-span-3 w-96 ">
+          <input type="text" name="name" id="name" placeholder="Name" class="col-span-2 p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="number" name="price" id="price" placeholder="Price" class="p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="text" name="name" id="name" placeholder="Things details 1" class="p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="text" name="name" id="name" placeholder="Things details 2" class="p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="text" name="name" id="name" placeholder="Things details 3" class="p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="text" name="name" id="name" placeholder="Things details 4" class="p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="text" name="name" id="name" placeholder="Things details 5" class="p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="text" name="name" id="name" placeholder="Things details 6" class="p-2 rounded-lg border border-yellow-500 w-full">
+          
+        </form>
+        <div class="text-center mt-10 mb-5 w-full">
+        <button class="capitalize shadow-lg py-2 px-20 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300">
+          Add new dish</button>
+      </div>
+        </div>
+      </div>
+    </section>
 
 
 
