@@ -140,12 +140,12 @@
               Creat new Dish cart</button>
         </div>
         <div class="flex items-center justify-center gap-x-2 capitalize mt-20">
-            <a href="#" class="text-sm gradient-text ">All</a>
-            <a href="#" class="text-sm gradient-text">Fast Food</a>
-            <a href="#" class="text-sm gradient-text">Desi Food</a>
+          <h1 class="all text-sm gradient-text cursor-pointer">all</h1>
+          <h1 class="fast_food text-sm gradient-text cursor-pointer">Fast Food</h1>
+          <h1 class="desi_food text-sm gradient-text cursor-pointer">Desi Food</h1>
         </div>
         <div class="cart_make grid md:grid-cols-4 grid-cols-1 gap-5 my-10">
-            <div class="shadow-xl bg-white rounded-lg">
+            <div class="fastFood shadow-xl bg-white rounded-lg">
                 <div class="relative">
                 <img src="./images/deal 1.jpg" class="rounded-t-lg w-full">
                 <div class="absolute top-1 right-2">
@@ -167,20 +167,20 @@
                   </a>
                 </div>
             </div>
-            <div class="shadow-xl bg-white rounded-lg">
+            <div class="desiFood shadow-xl bg-white rounded-lg">
                 <div class="relative">
-                <img src="./images/deal 1.jpg" class="rounded-t-lg w-full">
+                <img src="./images/biryani.jpg" class="rounded-t-lg w-full">
                 <div class="absolute top-1 right-2">
                     <i class="far fa-heart gradient-text text-2xl"></i>
                 </div>
             </div>
                 <div class="p-3 capitalize flex items-center justify-between">
-                    <h1 class="gradient-text">deal 1</h1>
-                    <h1 class="text-xs">Rs.600</h1>
+                    <h1 class="gradient-text">Full Biryani</h1>
+                    <h1 class="text-xs">Rs.500</h1>
                 </div>
                 <div class="p-3 text-xs capitalize ">
-                    <h1 class="text-gray-500 mb-2"><i class="far fa-play-circle gradient-text mr-1"></i> 1 chicken burger</h1>
-                    <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 1 French Fries</h1>
+                    <h1 class="text-gray-500 mb-2"><i class="far fa-play-circle gradient-text mr-1"></i>Full chicken biryani</h1>
+                    <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 1 chicken peice</h1>
                 </div>
                 <div class="capitalize text-center p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer">
                   <a href="#">
@@ -200,8 +200,12 @@
         <div class="w-full my-5">
           <form action="" class="grid md:grid-cols-3 grid-cols-1 gap-8 w-full capitalize">
           <input type="file" name="img" id="img" class="col-span-3 w-96 ">
-          <input type="text" name="name" id="name" placeholder="Name" class="col-span-2 p-2 rounded-lg border border-yellow-500 w-full">
+          <input type="text" name="name" id="name" placeholder="Name" class=" p-2 rounded-lg border border-yellow-500 w-full">
           <input type="number" name="price" id="price" placeholder="Price" class="p-2 rounded-lg border border-yellow-500 w-full">
+          <select class="p-2 rounded-lg border border-yellow-500 w-full">
+            <option value="fastFood">fastFood</option>
+            <option value="desiFood">desiFood</option>
+          </select>
           <input type="text" name="name" id="name" placeholder="Things details 1" class="p-2 rounded-lg border border-yellow-500 w-full">
           <input type="text" name="name" id="name" placeholder="Things details 2" class="p-2 rounded-lg border border-yellow-500 w-full">
           <input type="text" name="name" id="name" placeholder="Things details 3" class="p-2 rounded-lg border border-yellow-500 w-full">
@@ -217,12 +221,56 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    <footer class="bg-gradient-to-r from-orange-300 to-yellow-300 shadow-xl">
+      <div class="max-w-7xl mx-auto py-3 px-3">
+        <div class="flex md:flex-row flex-col items-center justify-around md:justify-between gap-5">
+          <div class="text-yellow-900 hover:text-orange-900">
+            <a href="./index.html" class="flex items-center gap-x-2">
+              <i class="fas fa-hamburger"></i>
+              <h1 class="text-2xl">Foodi</h1>
+            </a>
+          </div>
+          <div class="flex items-center gap-x-2">
+            <a href="#">
+              <i
+                class="fab fa-facebook-f p-3 text-orange-600 hover:text-pink-500 p-3 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fab fa-github p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fab fa-linkedin-in p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fab fa-skype p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fab fa-twitter p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          
+        </div>
+        <div class="capitalize text-center mt-5">
+          <h1 class="text-gray-600 text-xs">All copyright reserved. 2023</h1>
+        </div>
+      </div>
+    </footer>
 
 
     <script src="./script.js"></script>

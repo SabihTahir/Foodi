@@ -18,3 +18,22 @@ createDishBtn.addEventListener('click', () => {
 closebtnmodal.addEventListener('click', () => {
     carmodal.classList.toggle('hidden');
 });
+
+const allBtn = document.querySelector('.all');
+const fastfoodbtn = document.querySelector('.fast_food');
+const desifoodbtn = document.querySelector('.desi_food');
+const fastFoodcart = document.querySelector('.fastFood');
+const desiFoodcart = document.querySelector('.desiFood');
+
+fastfoodbtn.addEventListener('click', () => {
+    desiFoodcart.classList.add('hidden');
+    fastFoodcart.classList.remove('hidden');
+});
+desifoodbtn.addEventListener('click', () => {
+    fastFoodcart.classList.add('hidden');
+    desiFoodcart.classList.remove('hidden');
+});
+allBtn.addEventListener('click', () => {
+    desiFoodcart.classList.remove('hidden');
+    fastFoodcart.classList.remove('hidden');
+});
