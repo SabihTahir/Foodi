@@ -1,90 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/080fa86623.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/080fa86623.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500;600;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500;600;700&display=swap");
 
-        *{
-            /* font-family: 'Tilt Prism', cursive; */
-            font-family: 'Shantell Sans', cursive;
-        }
-
-
+      * {
+        /* font-family: 'Tilt Prism', cursive; */
+        font-family: "Shantell Sans", cursive;
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #e87008, #e4e40b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body class="overflow-x-hidden">
     <header class="bg-gradient-to-r from-orange-300 to-yellow-300">
-        <nav class="max-w-7xl mx-auto py-3 px-3">
-            <div class="flex items-center md:justify-around justify-between">
-                <div class="text-yellow-900 hover:text-orange-900">
-                <a href="./index.html" class="flex items-center gap-x-2">
-                    <i class="fas fa-hamburger"></i>
-                    <h1 class="text-2xl">Foodi</h1>
-                </a>
-                </div>
-                <div class="flex items-center gap-x-3">
-                    <div class="relative md:flex hidden">
-                        <input type="search" name="search" id="Food_search" class="w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full">
-                        <div class="absolute top-[.7px] left-[278px]">
-                            <i class="fa fa-search text-orange-500 p-3 rounded-r-full bg-gradient-to-r from-orange-300 to-yellow-300 cursor-pointer"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center gap-x-2">
-                    <a href="#">
-                    <i class="fas fa-house-user text-orange-600 hover:text-pink-500 p-3 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
-                </a>
-                    <a href="#">
-                    <i class="fa fa-phone p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
-                </a>
-                <a href="#">
-                    <i class="fas fa-user-friends p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-cart-shopping p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
-                </a>
-                </div>
-                <div class=" md:hidden flex">
-                    <i class="mobile_btn fa fa-bars p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
-                </div>
-            </div>
-            
-        </nav>
-        <div class="mobile_menu hidden  flex flex-col justify-center items-center gap-y-5 py-5">
-            <div class="flex items-center gap-x-3">
-                <div class="relative flex">
-                    <input type="search" name="search" id="Food_search" class="w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full">
-                    <div class="absolute top-[.7px] left-[278px]">
-                        <i class="fa fa-search text-orange-500 p-3 rounded-r-full bg-gradient-to-r from-orange-300 to-yellow-300 cursor-pointer"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex items-center gap-x-5">
-                <a href="#">
-                <i class="fas fa-house-user text-orange-600 hover:text-pink-500 p-3 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
+      <nav class="max-w-7xl mx-auto py-3 px-3">
+        <div class="flex items-center md:justify-around justify-between">
+          <div class="text-yellow-900 hover:text-orange-900">
+            <a href="./index.html" class="flex items-center gap-x-2">
+              <i class="fas fa-hamburger"></i>
+              <h1 class="text-2xl">Foodi</h1>
             </a>
-                <a href="#">
-                <i class="fa fa-phone p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <div class="relative md:flex hidden">
+              <input
+                type="search"
+                name="search"
+                id="Food_search"
+                class="w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full"
+              />
+              <div class="absolute top-[.7px] left-[278px]">
+                <i
+                  class="fa fa-search text-orange-500 p-3 rounded-r-full bg-gradient-to-r from-orange-300 to-yellow-300 cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center gap-x-2">
+            <a href="#">
+              <i
+                class="fas fa-house-user text-orange-600 hover:text-pink-500 p-3 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
             </a>
             <a href="#">
-                <i class="fas fa-user-friends p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
+              <i
+                class="fa fa-phone p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
             </a>
             <a href="#">
-                <i class="fa fa-cart-shopping p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
+              <i
+                class="fas fa-user-friends p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
             </a>
-            </div>
+            <a href="#">
+              <i
+                class="fa fa-cart-shopping p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+              ></i>
+            </a>
+          </div>
+          <div class="md:hidden flex">
+            <i
+              class="mobile_btn fa fa-bars p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+            ></i>
+          </div>
         </div>
+      </nav>
+      <div
+        class="mobile_menu hidden flex flex-col justify-center items-center gap-y-5 py-5"
+      >
+        <div class="flex items-center gap-x-3">
+          <div class="relative flex">
+            <input
+              type="search"
+              name="search"
+              id="Food_search"
+              class="w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full"
+            />
+            <div class="absolute top-[.7px] left-[278px]">
+              <i
+                class="fa fa-search text-orange-500 p-3 rounded-r-full bg-gradient-to-r from-orange-300 to-yellow-300 cursor-pointer"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex items-center gap-x-5">
+          <a href="#">
+            <i
+              class="fas fa-house-user text-orange-600 hover:text-pink-500 p-3 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa fa-phone p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fas fa-user-friends p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa fa-cart-shopping p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
+            ></i>
+          </a>
+        </div>
+      </div>
     </header>
     <main class="w-full">
-        <div class="">
-            <img src="./images/foodbg.jpg" class="w-full">
+      <div class="">
+        <div class="relative">
+          <img src="./images/background.png" class="w-full" />
+          <div class="absolute md:top-20 sm:top-10 top-3 md:left-96 sm:left-48 left-5">
+            <div class="gradient-text font-medium text-center capitalize">
+                <h1 class="md:text-4xl text-md md:max-w-2xl max-w-xs mx-auto">If your are foodi person and want to enjoy! this place is for you </h1>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
-<script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
