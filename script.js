@@ -10,13 +10,16 @@ mobileBtn.addEventListener('click', () => {
 
 const createDishBtn = document.querySelector('.create_btn');
 const closebtnmodal = document.querySelector('.close_btn');
-const carmodal = document.querySelector('.Add_cart_modal');
+const cartmodal = document.querySelector('.Add_cart_modal');
+const animationBtn = document.querySelector('.animation_btn');
 
 createDishBtn.addEventListener('click', () => {
-    carmodal.classList.toggle('hidden');
+    cartmodal.classList.toggle('hidden');
+    animationBtn.classList.add('hidden');
 });
 closebtnmodal.addEventListener('click', () => {
-    carmodal.classList.toggle('hidden');
+    cartmodal.classList.toggle('hidden');
+    animationBtn.classList.remove('hidden');
 });
 
 const allBtn = document.querySelector('.all');
