@@ -71,7 +71,7 @@ MessageBtn.addEventListener('click', (items) => {
   const personEmail = document.querySelector('#email').value;
   const personMessage = document.querySelector('#message').value;
 
-  if (personName === '' && personEmail === '' && personMessage === ''){
+  if (personName === '' || personEmail === '' || personMessage === ''){
     alert(`please fill all fields`);
   }
     else{
