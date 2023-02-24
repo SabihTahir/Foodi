@@ -24,10 +24,10 @@
     </style>
   </head>
   <body class="overflow-x-hidden">
-    <header class="bg-gradient-to-r from-orange-300 to-yellow-300 shadow-xl">
+    <header class="bg-gradient-to-r from-orange-300 to-yellow-300 shadow-xl" id="home">
       <nav class="max-w-7xl mx-auto py-3 px-3">
         <div class="flex items-center md:justify-around justify-between">
-          <div class="text-yellow-900 hover:text-orange-900">
+          <div class="text-yellow-900 hover:text-pink-500">
             <a href="./index.html" class="flex items-center gap-x-2">
               <i class="fas fa-hamburger"></i>
               <h1 class="text-2xl">Foodi</h1>
@@ -39,7 +39,7 @@
                 type="search"
                 name="search"
                 id="Food_search"
-                class="w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full"
+                class="w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full text-pink-500 outline-none"
               />
               <div class="absolute top-[.7px] left-[278px]">
                 <i
@@ -49,17 +49,17 @@
             </div>
           </div>
           <div class="hidden md:flex items-center gap-x-2">
-            <a href="#">
+            <a href="./index.html">
               <i
                 class="fas fa-house-user text-orange-600 hover:text-pink-500 p-3 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
               ></i>
             </a>
-            <a href="#">
+            <a href="#contact">
               <i
                 class="fa fa-phone p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
               ></i>
             </a>
-            <a href="#">
+            <a href="#about">
               <i
                 class="fas fa-user-friends p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
               ></i>
@@ -101,12 +101,12 @@
               class="fas fa-house-user text-orange-600 hover:text-pink-500 p-3 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
             ></i>
           </a>
-          <a href="#">
+          <a href="#contact">
             <i
               class="fa fa-phone p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
             ></i>
           </a>
-          <a href="#">
+          <a href="#about">
             <i
               class="fas fa-user-friends p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"
             ></i>
@@ -119,11 +119,11 @@
         </div>
       </div>
     </header>
-    <main class="w-full">
+    <main class="w-full ">
       <div class="">
         <div class="relative">
           <img src="./images/background.png" class="w-full" />
-          <div class="absolute md:top-20 sm:top-10 top-3 md:left-96 sm:left-48 left-5">
+          <div class="absolute md:top-48 sm:top-10 top-5 md:left-96 sm:left-48 left-5">
             <div class="gradient-text font-medium text-center capitalize">
                 <h1 class="md:text-4xl text-md md:max-w-2xl max-w-xs mx-auto">If your are foodi person and want to enjoy! this place is for you </h1>
             </div>
@@ -132,8 +132,8 @@
       </div>
     </main>
     <section class="max-w-7xl mx-auto my-10 p-3">
-        <div class="text-center gradient-text">
-            <h1 class="text-3xl">Food Menu!</h1>
+        <div class="text-center capitalize">
+            <h1 class="text-3xl gradient-text">Food Menu!</h1>
         </div>
         <div class="md:text-end text-center my-5">
             <button class="capitalize create_btn shadow-lg py-2 px-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300">
@@ -266,9 +266,93 @@
       </div>
     </section>
     
+    <section class="my-5" id="about">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center capitalize my-2">
+          <h1 class="text-3xl gradient-text">About Us</h1>
+        </div>
+        <div class="flex md:flex-row flex-col items-center md:justify-between justify-center gap-5 my-5">
+          <div class="w-3/5">
+            <h1 class="text-2xl gradient-text my-5">Fresh Food!</h1>
+            <p class="text-sm leading-loose max-w-lg gradient-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere ut mollitia, atque reiciendis magnam. Amet facere blanditiis voluptatem velit incidunt! Inventore quas nulla necessitatibus in ratione vero nostrum tenetur.
+            Nobis, dolore explicabo ad voluptates officiis cum. Odit inventore vel iusto, molestiae ad consectetur possimus, aperiam ipsa repellendus, perspiciatis ea et quisquam! Assumenda autem ex recusandae, fuga temporibus beatae quod.</p>
+          </div>
+          <div class="md:w-2/5 w-full px-5">
+            <div class="grid grid-cols-2 shadow-xl">
+            <img src="./images/fresh2.png" class="w-full ">
+            <div class="bg-gradient-to-r from-orange-200 to-yellow-200"></div>
+            <div class="bg-gradient-to-r from-orange-200 to-yellow-200"></div>
+            <img src="./images/fresh1.png" class="w-full">
+          </div>
+          </div>
+        </div>
+        <div class="flex md:flex-row-reverse flex-col items-center md:justify-between justify-center gap-5 my-5">
+          <div class="w-3/5 ml-20">
+            <h1 class="text-2xl gradient-text my-5">Fresh Food!</h1>
+            <p class="text-sm leading-loose max-w-lg gradient-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere ut mollitia, atque reiciendis magnam. Amet facere blanditiis voluptatem velit incidunt! Inventore quas nulla necessitatibus in ratione vero nostrum tenetur.
+            Nobis, dolore explicabo ad voluptates officiis cum. Odit inventore vel iusto, molestiae ad consectetur possimus, aperiam ipsa repellendus, perspiciatis ea et quisquam! Assumenda autem ex recusandae, fuga temporibus beatae quod.</p>
+          </div>
+          <div class="md:w-2/5 w-full px-5">
+            <div class="grid grid-cols-2 shadow-xl">
+            <img src="./images/fresh2.png" class="w-full ">
+            <div class="bg-gradient-to-r from-orange-200 to-yellow-200"></div>
+            <div class="bg-gradient-to-r from-orange-200 to-yellow-200"></div>
+            <img src="./images/fresh1.png" class="w-full">
+          </div>
+          </div>
+        </div>
+        <div class="flex md:flex-row flex-col items-center md:justify-between justify-center gap-5 my-5">
+          <div class="w-3/5">
+            <h1 class="text-2xl gradient-text my-5">Fresh Food!</h1>
+            <p class="text-sm leading-loose max-w-lg gradient-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere ut mollitia, atque reiciendis magnam. Amet facere blanditiis voluptatem velit incidunt! Inventore quas nulla necessitatibus in ratione vero nostrum tenetur.
+            Nobis, dolore explicabo ad voluptates officiis cum. Odit inventore vel iusto, molestiae ad consectetur possimus, aperiam ipsa repellendus, perspiciatis ea et quisquam! Assumenda autem ex recusandae, fuga temporibus beatae quod.</p>
+          </div>
+          <div class="md:w-2/5 w-full px-5">
+            <div class="grid grid-cols-2 shadow-xl">
+            <img src="./images/fresh2.png" class="w-full ">
+            <div class="bg-gradient-to-r from-orange-200 to-yellow-200"></div>
+            <div class="bg-gradient-to-r from-orange-200 to-yellow-200"></div>
+            <img src="./images/fresh1.png" class="w-full">
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" w-full my-10 max-w-7xl mx-auto" id="contact">
+      <div class="bg-gradient-to-r from-orange-300 to-yellow-300 shadow-xl rounded-xl p-10">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center capitalize my-3">
+            <h1 class="text-3xl text-pink-500">Contact</h1>
+          </div>
+          <div class="flex md:flex-row flex-col md:justify-around items-center justify-center  gap-5">
+            <div class=" capitalize">
+              <h1 class="text-pink-500 text-lg inline mr-2">address:</h1><p class="text-xs text-gray-700 inline">johar town lahore, pakistan</p><br>
+              <h1 class="text-pink-500 text-lg inline mr-2">phone no:</h1><p class="text-xs text-gray-700 inline">xxxx-xxxxxxxx</p>
+            </div>
+            <div class="">
+              <div class="capitalize mb-5">
+                <h1 class="text-pink-500 text-xl">Message..</h1>
+              </div>
+              <div class="">
+                <form action="" class="myForm flex flex-col gap-y-5">
+                <input type="text" name="name" id="Name" placeholder="name" class="capitalize w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full text-pink-500 outline-none">
+                <input type="email" name="email" id="email" placeholder="email" class="capitalize w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-full text-pink-500 outline-none">
+                <textarea name="message" id="message" placeholder="Message" cols="10" rows="5" class="capitalize w-80 py-2 pl-3 border border-orange-500 bg-transparent rounded-lg text-pink-500 outline-none"></textarea>
+                <button class="message_btn capitalize create_btn shadow-lg py-2 px-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300">Send message</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
-    
-    
+    <section class="sticky bottom-5 text-right rounded-full mr-5 md:mb-5 mb-2">
+      <a href="#home " class="">
+        <i class="fas fa-arrow-up animate-bounce w-10 h-10 p-3 text-orange-600 hover:text-pink-500 rounded-full bg-transparent border border-orange-500 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer"></i>
+      </a>
+    </section>
     
     <footer class="bg-gradient-to-r from-orange-300 to-yellow-300 shadow-xl">
       <div class="max-w-7xl mx-auto py-3 px-3">
@@ -308,7 +392,6 @@
           </div>
         </div>
         <div>
-          
         </div>
         <div class="capitalize text-center mt-5">
           <h1 class="text-gray-600 text-xs">All copyright reserved. 2023</h1>

@@ -55,4 +55,31 @@ fastfoodbtn.addEventListener('click', () => {
           likeBtn.classList.toggle('font-bold');
       });
   });
+
+  
+  const MessageBtn = document.querySelector('.message_btn');
+  const Message = [];
+
+MessageBtn.addEventListener('click', (items) => {
+
+    items.preventDefault();
+
+  const personName = document.querySelector('#Name').value;
+  const personEmail = document.querySelector('#email').value;
+  const personMessage = document.querySelector('#message').value;
+
+  if (personName === '' && personEmail === '' && personMessage === ''){
+    alert(`please fill all fields`);
+  }
+    else{
+  Message.push({
+        name: personName,
+        email: personEmail,
+        message: personMessage,
+    });
+    console.log(Message);
+
+    };
+    document.querySelector(".myForm").reset();
+});
   
