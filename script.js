@@ -10,30 +10,79 @@ mobileBtn.addEventListener('click', () => {
 
 const createDishBtn = document.querySelector('.create_btn');
 const closebtnmodal = document.querySelector('.close_btn');
-const carmodal = document.querySelector('.Add_cart_modal');
+const cartmodal = document.querySelector('.Add_cart_modal');
+const animationBtn = document.querySelector('.animation_btn');
 
 createDishBtn.addEventListener('click', () => {
-    carmodal.classList.toggle('hidden');
+    cartmodal.classList.toggle('hidden');
+    animationBtn.classList.add('hidden');
 });
 closebtnmodal.addEventListener('click', () => {
-    carmodal.classList.toggle('hidden');
+    cartmodal.classList.toggle('hidden');
+    animationBtn.classList.remove('hidden');
 });
 
 const allBtn = document.querySelector('.all');
 const fastfoodbtn = document.querySelector('.fast_food');
 const desifoodbtn = document.querySelector('.desi_food');
-const fastFoodcart = document.querySelector('.fastFood');
-const desiFoodcart = document.querySelector('.desiFood');
+const foodItems    = document.querySelectorAll('.food-item')
 
 fastfoodbtn.addEventListener('click', () => {
-    desiFoodcart.classList.add('hidden');
-    fastFoodcart.classList.remove('hidden');
+    filterItems('fast-food');
+  });
+  
+  desifoodbtn.addEventListener('click', () => {
+    filterItems('desi-food');
+  });
+  
+  allBtn.addEventListener('click', () => {
+    filterItems('all');
+  });
+
+  function filterItems(category) {
+    foodItems.forEach(item => {
+      if (category === 'all') {
+        item.classList.remove('hidden');
+      } else if (item.getAttribute('data-category') !== category) {
+        item.classList.add('hidden');
+      } else {
+        item.classList.remove('hidden');
+      }
+    });
+  }
+
+  const likeBtns = document.querySelectorAll('.like');
+
+  likeBtns.forEach(likeBtn => {
+      likeBtn.addEventListener('click', () => {
+          likeBtn.classList.toggle('font-bold');
+      });
+  });
+
+  
+  const MessageBtn = document.querySelector('.message_btn');
+  const Message = [];
+
+MessageBtn.addEventListener('click', (items) => {
+
+    items.preventDefault();
+
+  const personName = document.querySelector('#Name').value;
+  const personEmail = document.querySelector('#email').value;
+  const personMessage = document.querySelector('#message').value;
+
+  if (personName === '' && personEmail === '' && personMessage === ''){
+    alert(`please fill all fields`);
+  }
+    else{
+  Message.push({
+        name: personName,
+        email: personEmail,
+        message: personMessage,
+    });
+    console.log(Message);
+
+    };
+    document.querySelector(".myForm").reset();
 });
-desifoodbtn.addEventListener('click', () => {
-    fastFoodcart.classList.add('hidden');
-    desiFoodcart.classList.remove('hidden');
-});
-allBtn.addEventListener('click', () => {
-    desiFoodcart.classList.remove('hidden');
-    fastFoodcart.classList.remove('hidden');
-});
+  
