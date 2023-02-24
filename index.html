@@ -145,7 +145,7 @@
           <h1 class="desi_food text-sm gradient-text cursor-pointer">Desi Food</h1>
         </div>
         <div class="cart_make grid md:grid-cols-4 grid-cols-1 gap-5 my-10">
-            <div class="fastFood shadow-xl bg-white rounded-lg">
+            <div class=" food-item shadow-xl bg-white rounded-lg" data-category="fast-food">
                 <div class="relative">
                 <img src="./images/deal 1.jpg" class="rounded-t-lg w-full">
                 <div class="absolute top-1 right-2">
@@ -156,8 +156,8 @@
                     <h1 class="gradient-text">deal 1</h1>
                     <h1 class="text-xs">Rs.600</h1>
                 </div>
-                <div class="p-3 text-xs capitalize ">
-                    <h1 class="text-gray-500 mb-2"><i class="far fa-play-circle gradient-text mr-1"></i> 1 chicken burger</h1>
+                <div class="p-3 text-xs capitalize h-36 ">
+                    <h1 class="text-gray-500 mb-1"><i class="far fa-play-circle gradient-text mr-1"></i> 1 chicken burger</h1>
                     <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 1 French Fries</h1>
                 </div>
                 <div class="capitalize text-center p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer">
@@ -167,7 +167,7 @@
                   </a>
                 </div>
             </div>
-            <div class="desiFood shadow-xl bg-white rounded-lg">
+            <div class="food-item shadow-xl bg-white rounded-lg" data-category="desi-food">
                 <div class="relative">
                 <img src="./images/biryani.jpg" class="rounded-t-lg w-full">
                 <div class="absolute top-1 right-2">
@@ -178,8 +178,8 @@
                     <h1 class="gradient-text">Full Biryani</h1>
                     <h1 class="text-xs">Rs.500</h1>
                 </div>
-                <div class="p-3 text-xs capitalize ">
-                    <h1 class="text-gray-500 mb-2"><i class="far fa-play-circle gradient-text mr-1"></i>Full chicken biryani</h1>
+                <div class="p-3 text-xs capitalize h-36 ">
+                    <h1 class="text-gray-500 mb-1"><i class="far fa-play-circle gradient-text mr-1"></i>Full chicken biryani</h1>
                     <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 2 chicken peice</h1>
                 </div>
                 <div class="capitalize text-center p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer">
@@ -189,6 +189,50 @@
                   </a>
                 </div>
             </div>
+            <div class="food-item shadow-xl bg-white rounded-lg" data-category="fast-food">
+              <div class="relative">
+              <img src="./images/deal 1.jpg" class="rounded-t-lg w-full">
+              <div class="absolute top-1 right-2">
+                  <i class="like far fa-heart gradient-text text-2xl"></i>
+              </div>
+          </div>
+              <div class="p-3 capitalize flex items-center justify-between">
+                  <h1 class="gradient-text">deal 1</h1>
+                  <h1 class="text-xs">Rs.600</h1>
+              </div>
+              <div class="p-3 text-xs capitalize h-36 ">
+                  <h1 class="text-gray-500 mb-1"><i class="far fa-play-circle gradient-text mr-1"></i> 1 chicken burger</h1>
+                  <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 1 French Fries</h1>
+              </div>
+              <div class="capitalize text-center p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer">
+                <a href="#">
+                  <i class="fa fa-cart-shopping"></i>
+                add to cart
+                </a>
+              </div>
+          </div>
+          <div class="food-item shadow-xl bg-white rounded-lg" data-category="desi-food">
+            <div class="relative">
+            <img src="./images/biryani.jpg" class="rounded-t-lg w-full">
+            <div class="absolute top-1 right-2">
+                <i class="like far fa-heart gradient-text text-2xl"></i>
+            </div>
+        </div>
+            <div class="p-3 capitalize flex items-center justify-between">
+                <h1 class="gradient-text">Full Biryani</h1>
+                <h1 class="text-xs">Rs.500</h1>
+            </div>
+            <div class="p-3 text-xs capitalize  h-36">
+                <h1 class="text-gray-500 mb-1"><i class="far fa-play-circle gradient-text mr-1"></i>Full chicken biryani</h1>
+                <h1 class="text-gray-500"><i class="far fa-play-circle gradient-text mr-1"></i> 2 chicken peice</h1>
+            </div>
+            <div class="capitalize text-center p-3 text-orange-600 hover:text-pink-500 rounded-lg bg-transparent hover:bg-gradient-to-r hover:from-yellow-300 hover:to-orange-300 cursor-pointer">
+              <a href="#">
+                <i class="fa fa-cart-shopping"></i>
+              add to cart
+              </a>
+            </div>
+        </div>
         </div>
     </section>
     <section class="Add_cart_modal hidden h-screen w-full fixed left-0 top-0 flex items-center justify-center bg-black bg-opacity-50 p-64">
@@ -203,8 +247,8 @@
           <input type="text" name="name" id="name" placeholder="Name" class=" p-2 rounded-lg border border-yellow-500 w-full">
           <input type="number" name="price" id="price" placeholder="Price" class="p-2 rounded-lg border border-yellow-500 w-full">
           <select class="p-2 rounded-lg border border-yellow-500 w-full">
-            <option value="fastFood">fastFood</option>
-            <option value="desiFood">desiFood</option>
+            <option value="fast-food">FastFood</option>
+            <option value="desi-food">DesiFood</option>
           </select>
           <input type="text" name="name" id="name" placeholder="Things details 1" class="p-2 rounded-lg border border-yellow-500 w-full">
           <input type="text" name="name" id="name" placeholder="Things details 2" class="p-2 rounded-lg border border-yellow-500 w-full">

@@ -22,26 +22,37 @@ closebtnmodal.addEventListener('click', () => {
 const allBtn = document.querySelector('.all');
 const fastfoodbtn = document.querySelector('.fast_food');
 const desifoodbtn = document.querySelector('.desi_food');
-const fastFoodcart = document.querySelector('.fastFood');
-const desiFoodcart = document.querySelector('.desiFood');
+const foodItems    = document.querySelectorAll('.food-item')
 
 fastfoodbtn.addEventListener('click', () => {
-    desiFoodcart.classList.add('hidden');
-    fastFoodcart.classList.remove('hidden');
-});
-desifoodbtn.addEventListener('click', () => {
-    fastFoodcart.classList.add('hidden');
-    desiFoodcart.classList.remove('hidden');
-});
-allBtn.addEventListener('click', () => {
-    desiFoodcart.classList.remove('hidden');
-    fastFoodcart.classList.remove('hidden');
-});
+    filterItems('fast-food');
+  });
+  
+  desifoodbtn.addEventListener('click', () => {
+    filterItems('desi-food');
+  });
+  
+  allBtn.addEventListener('click', () => {
+    filterItems('all');
+  });
 
-const likeBtn = document.querySelectorAll('.like');
+  function filterItems(category) {
+    foodItems.forEach(item => {
+      if (category === 'all') {
+        item.classList.remove('hidden');
+      } else if (item.getAttribute('data-category') !== category) {
+        item.classList.add('hidden');
+      } else {
+        item.classList.remove('hidden');
+      }
+    });
+  }
 
-likeBtn.addEventListener('click', () => {
-    likeBtn.classList.remove('gradient-text');
-    likeBtn.classList.add('text-red-500');
-    likeBtn.classList.add('font-bold');
-});
+  const likeBtns = document.querySelectorAll('.like');
+
+  likeBtns.forEach(likeBtn => {
+      likeBtn.addEventListener('click', () => {
+          likeBtn.classList.toggle('font-bold');
+      });
+  });
+  
